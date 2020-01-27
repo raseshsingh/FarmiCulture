@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            {% for foo in items %}
+                <div class="col-md-4">
+                    <p>{{ foo.title }}<br><small>{{ foo.price }}</small></p>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+{% endblock %}
