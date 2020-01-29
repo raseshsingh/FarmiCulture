@@ -5,7 +5,8 @@ from .models import Item
 # Create your views here.
 
 def index(request):
-    return render(request, 'core/index.html')
+    return render(request, 'sudo.html')
+    # return render(request, 'core/index.html')
 
 
 def list_item(request):
